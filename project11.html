@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toxicological Assessment | Biological Research</title>
+    <link rel="icon" type="image/png" href="RY Portfolio Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="scroll-progress-container"><div class="scroll-progress-bar" id="myBar"></div></div>
+    <header>
+        <nav aria-label="Main Navigation">
+            <a href="index.html" class="logo">
+    <img src="RY Portfolio Logo.png" alt="Logo" class="nav-logo-icon">
+    Portfolio
+</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+            <ul id="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Research</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="index.html#courses">Coursework</a></li>
+                <li><a href="index.html#awards">Awards</a></li>
+                <li><a href="index.html#certifications">Certifications</a></li>
+                <li><a href="index.html#journey">Journey</a></li>
+                <li><a href="index.html#skills">Competencies</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li class="theme-switch-wrapper"><label class="theme-switch" for="checkbox"><input type="checkbox" id="checkbox" /><div class="slider round"></div></label></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-detail-section" id="proj1">
+            <div class="project-header fade-up" style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 60px;">
+                <a href="index.html#projects" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+                <h2 style="font-size: 2.5rem; margin-top: 10px;">A Multifaceted Investigation of Differential and Synergistic Effects of Ginger and Garlic Essential Oils on Rabbit Growth, Liver Redox Activity, and Immunity</h2>
+                <span class="project-status-highlight pending-highlight">Status: Under Peer Review</span>
+                <span class="project-status-highlight pending-highlight">MPhil thesis Project</span>
+            </div>
+
+            <div class="project-row">
+                <div class="project-text fade-up">
+                    <h3>Research Overview</h3>
+                    <p>This study investigated and contrasted the impact of garlic and ginger essential oils on the growth performance, tissue redox parameters, and immunity of male rabbits.</p>
+                    <h3>Methodology</h3>
+                    <p>To perform this study 90 vaccinated male rabbits were divided into 10 groups. The treatment groups were given different proportions of both essential oils for 45 days. On the 15th, 30th, and 45th day, three rabbits from each dosage group were weighed on a digital balance to determine FCR. This was followed by euthanizing and collecting samples for ELISA to measure antibody titer against RHDV and spectrophotometric analysis to determine antioxidant activity (MDA Levels & Catalase Activity) in liver tissue.</p>
+                    <h3>Key Findings</h3>
+                    <ul>
+                        <li>Groups that received the greatest dose of the blend of both essential oils produced the most significant results.</li>
+                        <li>In comparison, garlic essential oil outperformed the ginger essential oil for immunity and antioxidant enzyme activity the studied parameters.</li>
+                        <li>In weight gain and FCR ginger EO surpassed the effect of garlic EO.</li>
+                    </ul>
+                </div>
+
+                <div class="project-images fade-up">
+                    <img src="Abstract R.jpeg" alt="Image 1">
+                    <img src="Rimsha thesis catalase.png" alt="Image 2">
+                    <img src="Rimsha thesis Liver.png" alt="Image 3">
+                </div>
+            </div> 
+
+            <div class="project-navigation fade-up">
+                <a href="project12.html" class="next-project-banner">
+                    <div class="next-banner-text"><span>Up Next</span><h3>Construction of Crispr-Cas9 Cassette for Bacterial Genome Insertion through Homologous Recombination</h3></div>
+                    <div class="next-banner-icon"><i class="fas fa-arrow-right"></i></div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <div id="imageModal" class="modal-overlay">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="expandedImg">
+        <div id="modal-caption"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("expandedImg");
+            const captionText = document.getElementById("modal-caption");
+            const closeModal = document.querySelector(".close-modal");
+
+            // Look for any image inside the project-images grid
+            const clickableImages = document.querySelectorAll(".project-images img");
+
+            clickableImages.forEach(img => {
+                img.style.cursor = "pointer"; 
+                
+                img.addEventListener("click", function() {
+                    modal.classList.add("show-modal");
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt || ""; 
+                });
+            });
+
+            if (closeModal) {
+                closeModal.addEventListener("click", () => {
+                    modal.classList.remove("show-modal");
+                });
+            }
+
+            if (modal) {
+                modal.addEventListener("click", (e) => {
+                    if (e.target === modal) {
+                        modal.classList.remove("show-modal");
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
