@@ -529,3 +529,26 @@ body.dark-mode .project-detail-section .project-images img:hover {
 .logo:hover .nav-logo-icon {
    transform: rotate(-5deg) scale(1.1); /* Fun, subtle animation when hovered */
 }
+
+/* =========================================
+   MOBILE FIX: CAMOUFLAGE COLOR OVERRIDE
+   ========================================= */
+@media (max-width: 850px) {
+    /* 1. Make Biologist & Zoologist visible */
+    .hero-text-area .dynamic-text {
+        color: #ffffff !important; /* Changes text to white on mobile */
+    }
+
+    /* 2. Make the CV Button visible */
+    .hero-text-area .btn-outline {
+        color: #ffffff !important; /* Button text color */
+        border-color: #ffffff !important; /* Button outline color */
+        background-color: transparent !important;
+    }
+    
+    /* (Optional) How the button looks when tapped on mobile */
+    .hero-text-area .btn-outline:active {
+        background-color: #ffffff !important;
+        color: #000000 !important; /* Changes text to black when tapped */
+    }
+}
