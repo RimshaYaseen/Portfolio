@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Herbal Efficacy Models | Biological Research</title>
-    <link rel="icon" type="image/png" href="RY Portfolio Logo.png">
+    <title>Growth, Lipid & Tissue Redox | Biological Research</title>
+    <link rel="icon" type="image/png" href="AS Portfolio Logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWMQLVSS7C"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWMQLVSS7C"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJ6YD9QHBM"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        
-        gtag('config', 'G-NWMQLVSS7C');
+        gtag('config', 'G-ZJ6YD9QHBM');
     </script>
 </head>
 <body>
@@ -23,7 +21,7 @@
     <header>
         <nav aria-label="Main Navigation">
             <a href="index.html" class="logo">
-    <img src="RY Portfolio Logo.png" alt="Logo" class="nav-logo-icon">
+    <img src="AS Portfolio Logo.png" alt="Logo" class="nav-logo-icon">
     Portfolio
 </a>
             <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
@@ -43,39 +41,32 @@
     </header>
 
     <main>
-        <section class="project-detail-section" id="proj3">
+        <section class="project-detail-section" id="proj6">
             <div class="project-header fade-up" style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 60px;">
                 <a href="index.html#projects" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
-                <h2 style="font-size: 2.5rem; margin-top: 10px;">Dose- and Time-Dependent Biphasic Modulation of Physiological Responses by Poppy Seed Supplementation in Rabbits</h2>
-                <span class="project-status-highlight pending-highlight">Status: Under Peer Review</span>
+                <h2 style="font-size: 2.5rem; margin-top: 10px;">Effect of Bottle Gourd (Lagenaria Siceraria) Seed Powder on Growth, Lipid Profile, Hematological, and Tissue Redox Parameters of Rabbit</h2>
+                <span class="project-status-highlight pending-highlight">Physiology & Redox</span>
+                <span class="project-status-highlight pending-highlight">Ongoing</span>
             </div>
 
             <div class="project-row">
                 <div class="project-text fade-up">
                     <h3>Research Overview</h3>
-                    <p>This study was designed to analyze the impact of poppy seeds on blood profile, liver function, growth performance and tissue redox parameter of rabbits.</p>
+                    <p>This study investigates the physiological and nutritional impacts of bottle gourd seed powder supplementation in rabbit models. The research evaluates how this additive influences overall growth performance, lipid profile, systemic blood health, and oxidative stress indicators.</p>
                     <h3>Methodology</h3>
-                    <p>To execute this research 72 rabbits were taken and divided into four groups with each group containing 18 rabbits. The chemical profile of poppy seeds was assessed via AOAC guidelines. The studied groups were fed with varied quantity of poppy seeds for 45 days. The complete blood count (CBC), liver functioning (ALT, AST, ALP, bilirubin, and albumin), growth performance by evaluating FCR, lipid peroxidase including MDA level, and catalase activity were assessed after 15, 30, and 45 days.</p>
+                    <p>This study employs a controlled in vivo experimental design, dividing rabbits into control and dose-dependent dietary treatment groups. Following a designated feeding duration, physical growth metrics are recorded, blood samples are assayed for lipid and hematological profiling, and harvested tissues are analyzed to assess redox balance and antioxidant status.</p>
                     <h3>Key Findings</h3>
-                    <ul>
-                        <li>The compositional analysis of poppy seeds exhibited a balanced nutritional component along with the generous quantity of linoleic and oleic acid.</li>
-                        <li>Univariate ANOVA revealed that the low dose of poppy seed meal had a positive effect on the studied parameters throughout the investigation period.</li>
-                        <li>Medium dose caused extremely positive impact on all parameters but was time dependent up till 30th day and showed negative impact at 45th day except for weight gain and FCR.</li>
-                        <li>High dose possessed dose dependent effect and showed negative impact on all parameters throughout the study.</li>
-                        <li>The findings contributed to the establishment of a safety margin for poppy seed consumption, as well as the evaluation of the dosage and time dependent approach.</li>
-                    </ul>
+                    <p>This study is ongoing.</p>
                 </div>
 
                 <div class="project-images fade-up">
-                    <img src="A abstract .jpeg" alt="Image 1">
-                    <img src="IMG_Rabbits.jpg" alt="Image 2">
-                    <img src="LFT,CBC.jpeg" alt="Image 3">
+                    <img src="project14.jpg" alt="Growth, lipid and redox figure">
                 </div>
-            </div> 
+            </div>
 
             <div class="project-navigation fade-up">
-                <a href="project11.html" class="next-project-banner">
-                    <div class="next-banner-text"><span>Up Next</span><h3>A Multifaceted Investigation of Differential and Synergistic Effects of Ginger and Garlic Essential Oils on Rabbit Growth, Liver Redox Activity, and Immunity</h3></div>
+                <a href="index.html#projects" class="next-project-banner">
+                    <div class="next-banner-text"><span>Up Next</span><h3>Effects Of Pumpkin Seed Essential Oil on Reproductive Hormones and Histopathology of Testis and Ovaries of Rabbits</h3></div>
                     <div class="next-banner-icon"><i class="fas fa-arrow-right"></i></div>
                 </a>
             </div>
@@ -94,33 +85,17 @@
             const modalImg = document.getElementById("expandedImg");
             const captionText = document.getElementById("modal-caption");
             const closeModal = document.querySelector(".close-modal");
-
-            // Look for any image inside the project-images grid
             const clickableImages = document.querySelectorAll(".project-images img");
-
             clickableImages.forEach(img => {
-                img.style.cursor = "pointer"; 
-                
+                img.style.cursor = "pointer";
                 img.addEventListener("click", function() {
                     modal.classList.add("show-modal");
                     modalImg.src = this.src;
-                    captionText.innerHTML = this.alt || ""; 
+                    captionText.innerHTML = this.alt || "";
                 });
             });
-
-            if (closeModal) {
-                closeModal.addEventListener("click", () => {
-                    modal.classList.remove("show-modal");
-                });
-            }
-
-            if (modal) {
-                modal.addEventListener("click", (e) => {
-                    if (e.target === modal) {
-                        modal.classList.remove("show-modal");
-                    }
-                });
-            }
+            if (closeModal) { closeModal.addEventListener("click", () => modal.classList.remove("show-modal")); }
+            if (modal) { modal.addEventListener("click", (e) => { if (e.target === modal) modal.classList.remove("show-modal"); }); }
         });
     </script>
 </body>
