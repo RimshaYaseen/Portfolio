@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductive Hormones & Histopathology | Biological Research</title>
+    <link rel="icon" type="image/png" href="AS Portfolio Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJ6YD9QHBM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; 
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZJ6YD9QHBM');
+    </script>
+</head>
+<body>
+    <div class="scroll-progress-container"><div class="scroll-progress-bar" id="myBar"></div></div>
+    <header>
+        <nav aria-label="Main Navigation">
+            <a href="index.html" class="logo">
+    <img src="AS Portfolio Logo.png" alt="Logo" class="nav-logo-icon">
+    Portfolio
+</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+            <ul id="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Research</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="index.html#courses">Coursework</a></li>
+                <li><a href="index.html#awards">Awards</a></li>
+                <li><a href="index.html#certifications">Certifications</a></li>
+                <li><a href="index.html#journey">Journey</a></li>
+                <li><a href="index.html#skills">Competencies</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li class="theme-switch-wrapper"><label class="theme-switch" for="checkbox"><input type="checkbox" id="checkbox" /><div class="slider round"></div></label></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-detail-section" id="proj4">
+            <div class="project-header fade-up" style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 60px;">
+                <a href="index.html#projects" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+                <h2 style="font-size: 2.5rem; margin-top: 10px;">Effects Of Pumpkin Seed Essential Oil on Reproductive Hormones and Histopathology of Testis and Ovaries of Rabbits</h2>
+                <span class="project-status-highlight pending-highlight">Reproductive Physiology</span>
+                <span class="project-status-highlight pending-highlight">Ongoing</span>
+            </div>
+
+            <div class="project-row">
+                <div class="project-text fade-up">
+                    <h3>Research Overview</h3>
+                    <p>This study investigates the physiological impact of pumpkin seed essential oil on the reproductive health of rabbit models. The research focuses on evaluating how the extract influences circulating reproductive hormone profiles and examining any resulting cellular or structural modifications in the testes and ovaries through detailed histopathological analysis.</p>
+                    <h3>Methodology</h3>
+                    <p>This study employs a controlled in vivo experimental design, dividing male and female rabbits into control and dose-dependent treatment groups. Following the administration of pumpkin seed essential oil over a set duration, reproductive hormones are quantified via ELISA, and harvested reproductive tissues undergo histopathological examination to assess cellular and structural changes.</p>
+                    <h3>Key Findings</h3>
+                    <p>This study is ongoing.</p>
+                </div>
+
+                <div class="project-images fade-up">
+                    <img src="project14.jpg" alt="Reproductive histopathology figure">
+                </div>
+            </div>
+
+            <div class="project-navigation fade-up">
+                <a href="project15.html" class="next-project-banner">
+                    <div class="next-banner-text"><span>Up Next</span><h3>Effect of Ajwain Powder (Trachyspermum Ammi) on Gut Microbiome, Blood Profile, and Immunity of Rabbit</h3></div>
+                    <div class="next-banner-icon"><i class="fas fa-arrow-right"></i></div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <div id="imageModal" class="modal-overlay">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="expandedImg">
+        <div id="modal-caption"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("expandedImg");
+            const captionText = document.getElementById("modal-caption");
+            const closeModal = document.querySelector(".close-modal");
+            const clickableImages = document.querySelectorAll(".project-images img");
+            clickableImages.forEach(img => {
+                img.style.cursor = "pointer";
+                img.addEventListener("click", function() {
+                    modal.classList.add("show-modal");
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt || "";
+                });
+            });
+            if (closeModal) { closeModal.addEventListener("click", () => modal.classList.remove("show-modal")); }
+            if (modal) { modal.addEventListener("click", (e) => { if (e.target === modal) modal.classList.remove("show-modal"); }); }
+        });
+    </script>
+</body>
+</html>
