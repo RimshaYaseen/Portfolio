@@ -503,16 +503,12 @@ body.dark-mode .pub-card:hover h3 { color: var(--gold-soft); }
 
 .footer-credit { padding: 0.8rem 1rem !important; }
 
-/* ===== Green card surfaces (project + publication + course cards) ===== */
-.card,
-.course-column,
-.course-block {
-    background: #dbeee3;
-    border-color: color-mix(in srgb, var(--primary) 25%, transparent);
+/* ===== Dark cards (projects · publications · courses) — like the thesis card ===== */
+.card, .course-column, .course-block {
+    background: linear-gradient(155deg, #1a231f, var(--navy) 60%, #141a17);
+    border-color: rgba(70,194,152,0.22);
 }
-body.dark-mode .card,
-body.dark-mode .course-column,
-body.dark-mode .course-block {
-    background: #16281f;
-    border-color: color-mix(in srgb, var(--primary) 32%, transparent);
-}
+.card-info h3, .pub-card h3, .column-title, .mini-course-row h4, .course-text h3 { color: #ffffff; }
+.card-info p, .pub-card p, .mini-course-row p, .course-text p { color: #c6d2cb; }
+.read-more, .course-meta, .mini-course-row i, .course-icon, .pub-card:hover h3 { color: #46c298; }
+.project-status-highlight, .project-status-highlight.pending-highlight { color: #46c298; border-color: rgba(70,194,152,0.4); }
