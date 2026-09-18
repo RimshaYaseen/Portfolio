@@ -1,5 +1,5 @@
 /* ============================================================
-   Rimsha Yaseen — Portfolio  ·  Emerald + Graphite (Professional)
+   RIMSHA YASEEN — Portfolio  ·  Emerald + Graphite (Professional)
    Full drop-in replacement for style.css
    Styles the existing HTML — no markup changes needed.
    ============================================================ */
@@ -502,3 +502,17 @@ body.dark-mode .pub-card:hover h3 { color: var(--gold-soft); }
 @media (max-width: 900px) { #publications .card-grid { grid-template-columns: 1fr !important; max-width: 560px !important; } }
 
 .footer-credit { padding: 0.8rem 1rem !important; }
+
+/* ===== Green card surfaces (project + publication + course cards) ===== */
+.card,
+.course-column,
+.course-block {
+    background: #dbeee3;
+    border-color: color-mix(in srgb, var(--primary) 25%, transparent);
+}
+body.dark-mode .card,
+body.dark-mode .course-column,
+body.dark-mode .course-block {
+    background: #16281f;
+    border-color: color-mix(in srgb, var(--primary) 32%, transparent);
+}
